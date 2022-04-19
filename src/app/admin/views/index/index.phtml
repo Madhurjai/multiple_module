@@ -1,0 +1,23 @@
+<style>
+    tr, td{
+        border : 2px solid grey ;
+       
+    } 
+    td{
+        margin : 20px ;
+    }
+</style>
+<?php
+
+echo "<h1>Hello World</h1>";
+
+echo PHP_EOL;
+
+echo $this->tag->linkTo(
+    ['admin/addproduct/index',
+    'add product Here!' ,'class' => 'btn btn-primary m-2']
+);
+echo $this->tag->linkTo([
+    'admin/displayproduct/index',
+    ' display product', 'class' => 'btn btn-primary']
+);
